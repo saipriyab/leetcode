@@ -1,3 +1,6 @@
+//leetcode link
+//https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/
+
 class Solution {
     public List<Integer> luckyNumbers (int[][] matrix) {
         Map<Integer,Integer> map=new HashMap<>();
