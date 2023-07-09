@@ -28,3 +28,27 @@ class Solution {
         return nums;
     }
 }
+
+
+**********
+
+class Solution {
+    public int[] rearrangeArray(int[] nums) {
+        int i=0,j=0,k=1;
+        int res[]=new int[nums.length];
+        for(;i<nums.length;i++)
+        {
+            if(nums[i]<0)
+            {
+                res[k]=nums[i];
+                k=k+2;
+            }
+            else
+           {
+                res[j]=nums[i];
+                j=j+2;
+           }
+        }
+        return res;
+    }
+}
